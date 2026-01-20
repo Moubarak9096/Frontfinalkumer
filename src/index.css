@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.no-nice-select {
+  display: block !important;
+}
+.no-nice-select {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.no-nice-select + .nice-select {
+  display: none !important;
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* CreateEvent.css */
+.image-upload-container {
+  position: relative;
+}
+
+.image-preview {
+  text-align: center;
+}
+
+.image-preview img {
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.image-preview img:hover {
+  border-color: #4a6cf7;
+}
+
+.candidate-card .image-preview img {
+  border: 2px solid #dee2e6;
+}
+
+.candidate-card .image-preview img:hover {
+  border-color: #28a745;
+}
+
+.section-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef !important;
+  transition: all 0.3s ease;
+}
+
+.section-card:hover {
+  border-color: #4a6cf7 !important;
+  background: #f0f4ff;
+}
+
+.confirmation-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.rn-progress-bar .step.active {
+  background: #4a6cf7;
+  color: white;
+  border-color: #4a6cf7;
+}
+
+.rn-progress-bar .step.active span {
+  background: white;
+  color: #4a6cf7;
+}
+
+/* Styles pour les aperçus d'images */
+.img-preview-thumb {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}

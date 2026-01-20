@@ -1,0 +1,2183 @@
+/* Event.css - Version Festival International de Musique */
+
+.festival-theme {
+  background: linear-gradient(135deg,  0%, 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Image de fond */
+.festival-background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.festival-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%) brightness(0.4);
+}
+
+.festival-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    rgba(188, 190, 195, 0.9) 0%,
+    rgba(120, 123, 130, 0.7) 50%,
+    rgb(83, 83, 84) 100%);
+}
+
+.festival-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* En-tête du festival */
+.festival-header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  position: relative;
+}
+
+.festival-back-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.festival-back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.festival-status-badge {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.festival-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #fad390;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.festival-subtitle {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+/* Statistiques */
+.festival-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.festival-stat-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.festival-stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.festival-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  opacity: 0.5;
+}
+
+.festival-stat-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.festival-stat-value {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.festival-stat-label {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Layout principal */
+.festival-content {
+  padding: 20px 0 60px;
+}
+
+/* Section temps restant et actions */
+.festival-top-section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  align-items: start;
+}
+
+.festival-time-section {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-time-section h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.festival-time-display {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(135deg, rgba(74, 105, 189, 0.2), rgba(30, 55, 153, 0.2));
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+}
+
+.festival-time-finished {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(238, 90, 82, 0.15));
+  color: #ff6b6b;
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+/* Boutons d'action */
+.festival-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 200px;
+}
+
+.festival-btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.festival-btn-primary {
+
+  color: white;
+  box-shadow: 0 4px 15px rgba(74, 105, 189, 0.3);
+}
+
+.festival-btn-primary:hover {
+  background: linear-gradient(135deg, #84142c, #065b83);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 105, 189, 0.4);
+}
+
+.festival-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.festival-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.festival-btn-share {
+
+  color: white;
+  box-shadow: 0 4px 15px rgba(74, 105, 189, 0.3);
+}
+
+.festival-btn-share:hover {
+  background: linear-gradient(135deg,  #84142c, #065b83);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 105, 189, 0.4);
+}
+
+.festival-btn-rules {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.festival-btn-rules:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Section des filtres */
+.festival-filters-section {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-filters-section h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #fad390;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.festival-filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.festival-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.festival-filter-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.festival-select-wrapper {
+  position: relative;
+}
+
+.festival-select {
+  width: 100%;
+  padding: 14px 45px 14px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.festival-select:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.festival-select:focus {
+  outline: none;
+  border-color:   #065b83;
+  box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2);
+}
+
+.festival-select-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+.festival-select option {
+  background:   #065b83;
+  color: white;
+  padding: 10px;
+}
+
+/* Recherche */
+.festival-search-group {
+  grid-column: 1 / -1;
+}
+
+.festival-search-wrapper {
+  position: relative;
+}
+
+.festival-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.festival-search-input {
+  width: 100%;
+  padding: 14px 20px 14px 55px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.festival-search-input:focus {
+  outline: none;
+  border-color: #4a69bd;
+  box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2);
+}
+
+.festival-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Section candidats */
+.festival-candidates-section {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-candidates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.festival-candidates-header h2 {
+  color: #fad390;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.festival-candidates-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.festival-candidates-count {
+  background: rgba(74, 105, 189, 0.2);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(74, 105, 189, 0.3);
+}
+
+/* Grille d'artistes */
+.festival-artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.festival-artist-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.festival-artist-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(74, 105, 189, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.festival-artist-medal {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 3px solid white;
+}
+
+.festival-medal-1 {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.festival-medal-2 {
+  background: linear-gradient(135deg, #C0C0C0, #A0A0A0);
+}
+
+.festival-medal-3 {
+  background: linear-gradient(135deg, #CD7F32, #A0522D);
+}
+
+.festival-artist-avatar {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+
+.festival-artist-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid  #065b83;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.festival-artist-img-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg,  #84142c, #065b83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  border: 4px solid   #065b83;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.festival-artist-number {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(135deg, #fad390, #f8c469);
+  color:   #065b83;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.festival-artist-info {
+  text-align: center;
+}
+
+.festival-artist-name {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: 700;
+}
+
+.festival-artist-category {
+  color: #fad390;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.festival-artist-bio {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  min-height: 45px;
+}
+
+.festival-artist-stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.festival-artist-votes,
+.festival-artist-rank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.festival-artist-stat-icon {
+  color: #fad390;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.festival-artist-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.festival-btn-vote {
+  background: linear-gradient(135deg,  #84142c, #065b83);
+  color: white;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 15px rgba(74, 105, 189, 0.3);
+}
+
+.festival-btn-vote:hover:not(:disabled) {
+  background: linear-gradient(135deg,  #84142c, #065b83);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 105, 189, 0.4);
+}
+
+.festival-btn-vote:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: linear-gradient(135deg, #666, #444);
+}
+
+.festival-artist-secondary-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.festival-btn-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.festival-btn-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.festival-btn-favorite:hover {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+/* États de chargement et vides */
+.festival-loading-candidates,
+.festival-no-candidates,
+.festival-select-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.festival-spinner {
+  animation: festival-spin 1s linear infinite;
+  font-size: 2.5rem;
+  color:   #065b83;
+  margin-bottom: 20px;
+}
+
+@keyframes festival-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.festival-loading-candidates p,
+.festival-no-candidates h4,
+.festival-select-section h4 {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.festival-subtext {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.festival-no-candidates-icon,
+.festival-select-icon {
+  font-size: 3.5rem;
+  color:   #065b83;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+/* Modal Règlement */
+.festival-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.festival-modal-content {
+  background: linear-gradient(135deg, #0c2461 0%, #1e3799 100%);
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.festival-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.festival-modal-header h3 {
+  margin: 0;
+  color: #fad390;
+  font-size: 1.6rem;
+}
+
+.festival-modal-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.festival-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.festival-modal-body {
+  padding: 30px;
+}
+
+.festival-modal-body h4 {
+  color: #fad390;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.festival-modal-body ol,
+.festival-modal-body ul {
+  color: rgba(255, 255, 255, 0.9);
+  padding-left: 25px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.festival-modal-body li {
+  margin-bottom: 10px;
+}
+
+.festival-modal-footer {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .festival-title {
+    font-size: 2.4rem;
+  }
+  
+  .festival-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .festival-top-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .festival-action-buttons {
+    flex-direction: row;
+    min-width: auto;
+  }
+  
+  .festival-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .festival-title {
+    font-size: 2rem;
+  }
+  
+  .festival-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .festival-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .festival-stat-value {
+    font-size: 2.5rem;
+  }
+  
+  .festival-artists-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-filters-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-candidates-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .festival-title {
+    font-size: 1.8rem;
+  }
+  
+  .festival-header {
+    padding: 30px 15px 20px;
+  }
+  
+  .festival-stats,
+  .festival-top-section,
+  .festival-filters-section,
+  .festival-candidates-section {
+    padding: 20px;
+  }
+  
+  .festival-stat-card {
+    padding: 25px 15px;
+  }
+  
+  .festival-time-display {
+    font-size: 1.8rem;
+    padding: 20px;
+  }
+  
+  .festival-action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Scrollbar personnalisée */
+.festival-sections-list::-webkit-scrollbar,
+.festival-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.festival-sections-list::-webkit-scrollbar-track,
+.festival-modal-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.festival-sections-list::-webkit-scrollbar-thumb,
+.festival-modal-content::-webkit-scrollbar-thumb {
+  background: #4a69bd;
+  border-radius: 10px;
+}
+
+.festival-sections-list::-webkit-scrollbar-thumb:hover,
+.festival-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #3867d6;
+}
+/* Modal de profil */
+.festival-profile-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.festival-profile-modal-content {
+  background: linear-gradient(135deg, #065b83 0%, #84142c 100%);
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.festival-profile-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.festival-profile-modal-header h3 {
+  margin: 0;
+  color: #fad390;
+  font-size: 1.6rem;
+}
+
+.festival-profile-modal-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.festival-profile-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.festival-profile-modal-body {
+  padding: 30px;
+}
+
+.festival-profile-modal-avatar {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 25px;
+}
+
+.festival-profile-modal-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #4a69bd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.festival-profile-modal-img-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4a69bd, #1e3799);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  border: 5px solid #4a69bd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.festival-profile-modal-number {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #fad390, #f8c469);
+  color: #0c2461;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 3px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.festival-profile-modal-info {
+  text-align: center;
+}
+
+.festival-profile-modal-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.festival-profile-modal-section {
+  color: #fad390;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.festival-profile-modal-bio-section {
+  text-align: left;
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-profile-modal-bio-section h5 {
+  color: #fad390;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.festival-profile-modal-bio {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.festival-profile-modal-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.festival-profile-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-profile-stat-icon {
+  color: #fad390;
+  font-size: 2rem;
+}
+
+.festival-profile-stat-value {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.festival-profile-stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.festival-profile-modal-metadata {
+  text-align: left;
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-profile-modal-metadata h5 {
+  color: #fad390;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.festival-profile-metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.festival-metadata-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.festival-metadata-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.festival-metadata-value {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.festival-profile-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 15px;
+}
+
+.festival-profile-modal-footer .festival-btn {
+  flex: 1;
+  padding: 15px 25px;
+  font-size: 1.05rem;
+}
+
+/* Responsive pour le modal */
+@media (max-width: 768px) {
+  .festival-profile-modal-content {
+    max-width: 95%;
+    margin: 10px;
+  }
+  
+  .festival-profile-modal-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .festival-profile-stat {
+    justify-content: center;
+  }
+  
+  .festival-profile-modal-footer {
+    flex-direction: column;
+  }
+  
+  .festival-profile-modal-avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .festival-profile-modal-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .festival-profile-modal-body {
+    padding: 20px;
+  }
+  
+  .festival-profile-modal-header {
+    padding: 20px;
+  }
+  
+  .festival-profile-metadata-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Modal de paiement */
+.festival-payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:  #84142c, #065b83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.festival-payment-modal-content {
+  background: linear-gradient(135deg, #0c2461 0%,  #84142c, 100%);
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.festival-payment-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.festival-payment-modal-header h3 {
+  margin: 0;
+  color: #fad390;
+  font-size: 1.6rem;
+}
+
+.festival-payment-modal-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.festival-payment-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.festival-payment-modal-body {
+  padding: 30px;
+}
+
+/* Formulaire de paiement */
+.payment-form-section h4 {
+  color: #fad390;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color:   #065b83;
+  box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2);
+}
+
+.vote-count-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.vote-count-control .form-control {
+  max-width: 100px;
+}
+
+.vote-count-note {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.amount-display {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.amount-display strong {
+  color: #fad390;
+  font-size: 1.2rem;
+}
+
+.payment-security-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(120, 224, 143, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(120, 224, 143, 0.2);
+  margin: 20px 0;
+  color: #78e08f;
+}
+
+/* Résultat du paiement */
+.payment-result {
+  text-align: center;
+}
+
+.payment-result-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.payment-result-icon.processing {
+  color: #fad390;
+}
+
+.payment-result-icon.success {
+  color: #78e08f;
+}
+
+.payment-result h4 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+
+.transaction-details, .votes-granted {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.transaction-details h5, .votes-granted h5 {
+  color: #fad390;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.info-value {
+  color: white;
+  font-weight: 500;
+}
+
+.vote-info {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vote-candidate {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.vote-count {
+  color: #fad390;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.vote-total {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* Pied de page du modal */
+.payment-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 15px;
+}
+
+.payment-modal-footer .festival-btn {
+  flex: 1;
+  padding: 15px 25px;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .festival-payment-modal-content {
+    max-width: 95%;
+    margin: 10px;
+  }
+  
+  .payment-modal-footer {
+    flex-direction: column;
+  }
+  
+  .festival-payment-modal-body {
+    padding: 20px;
+  }
+  
+  .vote-count-control {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Styles pour le formulaire de paiement */
+.payment-form-section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.candidate-info-summary {
+  background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #667eea20;
+}
+
+.candidate-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.candidate-avatar-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg,  #84142c, #065b83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candidate-summary-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.candidate-summary-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.candidate-summary-details {
+  flex: 1;
+}
+
+.candidate-summary-details strong {
+  display: block;
+  color: #333;
+  font-size: 16px;
+}
+
+.candidate-summary-details small {
+  color: #666;
+  font-size: 14px;
+}
+
+.price-info {
+  background: linear-gradient(135deg, #78e08f10 0%, #38ada910 100%);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.price-per-vote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.price-per-vote .price-icon {
+  color: #78e08f;
+  font-size: 24px;
+}
+
+.vote-count-control {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.vote-count-control input {
+  padding-right: 120px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vote-count-note {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f8f9fa;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  border: 1px solid #dee2e6;
+}
+
+.amount-display {
+  background: linear-gradient(135deg, #fad39020 0%, #fa983a20 100%);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.amount-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.amount-details span {
+  color: #666;
+  font-size: 14px;
+}
+
+.amount-details strong {
+  color:  #84142c;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-method-option {
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-method-option:hover {
+  border-color:   #065b83;
+  background-color: #f8f9fa;
+}
+
+.payment-method-option.selected {
+  border-color:  #065b83;
+  background-color: #667eea10;
+}
+
+.payment-method-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,  #84142c, #065b83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 18px;
+}
+
+.payment-method-info {
+  flex: 1;
+}
+
+.payment-method-name {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-method-desc {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+.mobile-money-section,
+.personal-info-section {
+  
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.personal-info-section h5 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+}
+
+.payment-security-info {
+  background: linear-gradient(135deg, #4a69bd10 0%, #1e379910 100%);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #4a69bd;
+  font-weight: bold;
+}
+
+.security-details {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.payment-notes {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+
+.payment-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.payment-note .note-icon {
+  color: #fa983a;
+  min-width: 20px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .payment-modal-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .payment-modal-footer .festival-btn {
+    width: 100%;
+  }
+}
+/* Styles pour AlertModal */
+.alert-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 2px solid;
+  animation: alertSlideIn 0.3s ease-out;
+}
+
+@keyframes alertSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.alert-icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.alert-title {
+  flex: 1;
+}
+
+.alert-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.alert-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.alert-close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.alert-body {
+  margin-bottom: 20px;
+}
+
+.alert-body p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.alert-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alert-ok-btn {
+  padding: 8px 24px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 80px;
+}
+
+.alert-ok-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.alert-ok-btn:active {
+  transform: translateY(0);
+}
+
+/* Styles spécifiques pour les différents types */
+.alert-modal.error {
+  background: #FEF2F2;
+  border-color: #FECACA;
+  color: #991B1B;
+}
+
+.alert-modal.warning {
+  background: #FFFBEB;
+  border-color: #FDE68A;
+  color: #92400E;
+}
+
+.alert-modal.success {
+  background: #F0FDF4;
+  border-color: #BBF7D0;
+  color: #166534;
+}
+/* Sections Styles */
+.festival-sections-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.festival-sections-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.festival-sections-section h3::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+/* Sections Buttons */
+.sections-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.section-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  color: #495057;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #dee2e6;
+}
+
+.section-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.section-button.active .badge-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section-button .me-2 {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.badge-count {
+  margin-left: 10px;
+  background: white;
+  color: #495057;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+/* Search Section */
+.search-section {
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  color: #6c757d;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 48px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+}
+
+.clear-search {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.clear-search:hover {
+  color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sections-buttons-container {
+    flex-direction: column;
+  }
+  
+  .section-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .festival-sections-section {
+    padding: 20px;
+  }
+  
+  .search-input {
+    padding: 12px 44px;
+  }
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sections-buttons-container {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Empty state styling */
+.sections-buttons-container:empty::after {
+  content: "Aucune section disponible";
+  display: block;
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-style: italic;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Sections Container */
+.festival-sections-container {
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.festival-sections-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: White;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.festival-sections-container h3::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(135deg, #065b83  0%, #84142c 100%);
+  border-radius: 2px;
+}
+
+
+/* Sections Buttons Grid */
+.sections-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.section-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 10px;
+  color: #065b83  0%, #84142c 100%;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.section-button:hover:not(.active) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.section-button.active {
+  background: linear-gradient(135deg,#065b83  0%, #84142c 100%);
+  
+  border-color: #065b83 ;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.section-button.active .section-count {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.section-button .me-2 {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.section-count {
+
+  color: #495057;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* No Sections Message */
+.no-sections-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  color: #6c757d;
+  font-size: 16px;
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sections-buttons-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-sections-container {
+    padding: 20px;
+  }
+  
+  .section-button {
+    padding: 14px 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sections-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sections-buttons-grid {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.section-button {
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Stagger animation for buttons */
+.section-button:nth-child(1) { animation-delay: 0.1s; }
+.section-button:nth-child(2) { animation-delay: 0.2s; }
+.section-button:nth-child(3) { animation-delay: 0.3s; }
+.section-button:nth-child(4) { animation-delay: 0.4s; }
+.section-button:nth-child(5) { animation-delay: 0.5s; }
+.section-button:nth-child(6) { animation-delay: 0.6s; }

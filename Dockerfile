@@ -22,3 +22,4 @@ CMD ["nginx", "-g", "daemon off;"]
 # Conteneur permanent 
 # docker run -d --name klumer-app -p 8080:80 klumer-frontend
 # docker start klumer-app
+#npm start

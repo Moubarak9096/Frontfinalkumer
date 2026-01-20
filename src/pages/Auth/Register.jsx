@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
@@ -18,14 +18,16 @@ const Register = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+
+
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    setError('');
-  };
+  const { name, value } = e.target;
+  setFormData(prev => ({ ...prev, [name]: value }));
+  setError('');
+};
+
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,7 +54,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch('https://api-klumer-node-votings-dev.onrender.com/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -240,6 +242,196 @@ const Register = () => {
                     <span>Déjà un compte ? </span>
                     <a href="/login" className="text-primary">Se connecter</a>
                   </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Register; */
+
+
+import React, { useState } from 'react';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
+
+const Register = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    setError('');
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+
+    // Validation
+    if (formData.password !== formData.confirmPassword) {
+      setError('Les mots de passe ne correspondent pas');
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        'https://api-klumer-node-votings-dev.onrender.com/auth/register',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            password: formData.password
+          })
+        }
+      );
+
+      const data = await response.json();
+
+      /** Réponse attendue :
+       {
+         message: "User registered successfully",
+         token: "xxx",
+         refreshToken: "yyy",
+         user: { ... }
+       }
+      */
+
+      if (data.token) {
+        // Stockage des infos
+        localStorage.setItem('userToken', data.token);
+        localStorage.setItem('userData', JSON.stringify(data.user));
+
+        navigate('/');
+      } else {
+        setError(data.message || 'Erreur lors de la création du compte');
+      }
+
+    } catch (err) {
+      setError('Erreur de connexion au serveur');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="template-color-1">
+      <Header />
+
+      <div className="rn-breadcrumb-inner ptb--30">
+        <div className="container">
+          <h5 className="title text-center">Inscription Klumer</h5>
+        </div>
+      </div>
+
+      <div className="login-area rn-section-gapTop">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <div className="form-wrapper-one">
+                <h4>Créer un compte</h4>
+
+                {error && <div className="alert alert-danger">{error}</div>}
+
+                <form onSubmit={handleSubmit}>
+                  
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="mb-4">
+                        <label className="form-label">Prénom *</label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          value={formData.firstName}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="col-md-6">
+                      <div className="mb-4">
+                        <label className="form-label">Nom *</label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-4">
+                    <label className="form-label">Email *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-4">
+                    <label className="form-label">Mot de passe *</label>
+                    <input
+                      type="password"
+                      name="password"
+                      value={formData.password}
+                      onChange={handleInputChange}
+                      minLength="6"
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-4">
+                    <label className="form-label">Confirmer le mot de passe *</label>
+                    <input
+                      type="password"
+                      name="confirmPassword"
+                      value={formData.confirmPassword}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="btn btn-primary w-100"
+                    disabled={loading}
+                  >
+                    {loading ? 'Création en cours...' : 'Créer mon compte'}
+                  </button>
+
+                  <div className="text-center mt-3">
+                    <span>Déjà un compte ? </span>
+                    <a href="/login" className="text-primary">Se connecter</a>
+                  </div>
+
                 </form>
               </div>
             </div>

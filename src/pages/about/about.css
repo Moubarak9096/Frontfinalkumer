@@ -1,0 +1,69 @@
+/* Fichier: src/pages/About/About.css */
+.process-line {
+  height: 2px;
+  background: linear-gradient(90deg, #4a6cf7, #ffc107, #4a6cf7);
+  z-index: 1;
+}
+
+.process-line::before,
+.process-line::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffc107;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.process-line::before {
+  left: 0;
+}
+
+.process-line::after {
+  right: 0;
+}
+
+.process-step {
+  z-index: 2;
+}
+
+.team-overlay {
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Fichier: src/pages/Contact/Contact.css */
+.contact-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.department-item:hover {
+  border-color: #4a6cf7 !important;
+  background-color: rgba(74, 108, 247, 0.05);
+}
+
+.faq-item:hover {
+  border-color: #4a6cf7 !important;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.form-control-lg:focus,
+.form-select-lg:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 0.25rem rgba(74, 108, 247, 0.25);
+}

@@ -59,21 +59,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
-  --color-primary: #00a3ff;
-  --color-primary-alta: #212e48;
+  /* Palette Klumer */
+  --color-primary: #dd1b44   ;      /* Rouge vif */
+  --color-secondary:  #84142c;  /* Bourgogne */
+  --color-tertiary: #065b83;     /* Bleu profond */
+
+  /* Gris et fonds */
   --color-gray: #f6f6f6;
   --color-gray-2: #f5f8fa;
-  --color-subtitle: #f9004d;
   --background-color-1: #24243557;
   --background-color-2: #13131d;
   --background-color-3: #151521;
   --background-color-4: #242435;
-  --gradient-one: linear-gradient(to right bottom, #2899d8, #00a3ff);
+
+  /* Dégradés */
+  --gradient-one: linear-gradient(to right bottom, #dd1b44, #065b83);
+
+  /* Typographie et textes */
   --color-heading: #ffffff;
   --color-body: #acacac;
-  --color-dark:rgb(29, 29, 29);
+  --color-dark: rgb(29, 29, 29);
   --color-light-heading: #181c32;
   --color-light-body: #65676b;
+
+  /* Bordures et tons neutres */
   --color-border-white: #00000024;
   --color-midgray: #878787;
   --color-light: #E4E6EA;
@@ -82,10 +91,14 @@
   --color-border: #ffffff14;
   --color-white: #ffffff;
   --color-white-75: rgba(255, 255, 255, 0.75);
+
+  /* États */
   --color-success: #3EB75E;
   --color-danger: #FF0003;
   --color-warning: #FF8F3C;
   --color-info: #1BA2DB;
+
+  /* Réseaux sociaux */
   --color-facebook: #3B5997;
   --color-twitter: #1BA1F2;
   --color-youtube: #ED4141;
@@ -95,6 +108,8 @@
   --color-vimeo: #00ADEF;
   --color-twitch: #6441A3;
   --color-discord: #7289da;
+
+  /* Poids de police */
   --p-light: 300;
   --p-regular: 400;
   --p-medium: 500;
@@ -102,6 +117,7 @@
   --p-bold: 700;
   --p-extra-bold: 800;
   --p-black: 900;
+
   --s-light: 300;
   --s-regular: 400;
   --s-medium: 500;
@@ -109,15 +125,25 @@
   --s-bold: 700;
   --s-extra-bold: 800;
   --s-black: 900;
+
+  /* Transitions */
   --transition: 0.4s;
+
+  /* Fonts */
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Roboto", sans-serif;
+
+  /* Tailles de texte */
   --font-size-b1: 14px;
   --font-size-b2: 18px;
   --font-size-b3: 22px;
+
+  /* Interlignes */
   --line-height-b1: 1.50;
   --line-height-b2: 1.6;
   --line-height-b3: 1.7;
+
+  /* Titres */
   --h1: 50px;
   --h2: 36px;
   --h3: 32px;
@@ -126,10 +152,12 @@
   --h6: 20px;
 }
 
+
 * {
   box-sizing: border-box;
 }
 
+.btn-tertiary { background-color: var(--color-tertiary); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; transition: background-color 0.3s ease; } .btn-tertiary:hover { background-color: #84142c; /* Bourgogne en hover */ }
 html {
   margin: 0;
   padding: 0;
@@ -21421,3 +21449,67 @@ body.active-light-mode {
 .logo-preview:hover .change-text {
   opacity: 1;
 }
+
+/* CreateEvent.css */
+.image-upload-container {
+  position: relative;
+}
+
+.image-preview {
+  text-align: center;
+}
+
+.image-preview img {
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.image-preview img:hover {
+  border-color: #4a6cf7;
+}
+
+.candidate-card .image-preview img {
+  border: 2px solid #dee2e6;
+}
+
+.candidate-card .image-preview img:hover {
+  border-color: #28a745;
+}
+
+.section-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef !important;
+  transition: all 0.3s ease;
+}
+
+.section-card:hover {
+  border-color: #4a6cf7 !important;
+  background: #f0f4ff;
+}
+
+.confirmation-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.rn-progress-bar .step.active {
+  background: #4a6cf7;
+  color: white;
+  border-color: #4a6cf7;
+}
+
+.rn-progress-bar .step.active span {
+  background: white;
+  color: #4a6cf7;
+}
+
+/* Styles pour les aperçus d'images */
+.img-preview-thumb {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+

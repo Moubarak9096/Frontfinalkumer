@@ -1,0 +1,79 @@
+/* Styles pour EventCard */
+.event-card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Assurer que les cartes dans la grille prennent toute la hauteur */
+.row-cols-1 > *, .row-cols-md-2 > *, .row-cols-lg-3 > * {
+  display: flex;
+}
+
+/* Style de base de la carte */
+.event-card .product-style-one {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Image de la carte */
+.event-card .card-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card .card-thumbnail img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Bouton Voter */
+.event-card .card-thumbnail .btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Contenu texte */
+.event-card .product-name {
+  display: block;
+  padding: 15px 15px 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.event-card .latest-bid {
+  display: block;
+  padding: 0 15px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Zone d'information */
+.event-card .bid-react-area {
+  padding: 10px 15px 15px;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-card .card-thumbnail img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .event-card .card-thumbnail img {
+    height: 140px;
+  }
+}

@@ -1,0 +1,165 @@
+/* Fichier: src/pages/Legal/OrganizerTerms.css */
+
+/* Styles pour la navigation rapide */
+.quick-nav {
+  position: sticky;
+  top: 80px;
+  z-index: 1000;
+  background: white;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quick-nav .btn {
+  transition: all 0.3s ease;
+}
+
+.quick-nav .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Styles pour les sections juridiques */
+.legal-section {
+  scroll-margin-top: 150px;
+}
+
+.section-header {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a6cf7, #28a745);
+}
+
+/* Styles pour les cartes de droits et obligations */
+.rights-card, .obligations-card {
+  transition: all 0.3s ease;
+}
+
+.rights-card:hover, .obligations-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Styles pour les tables */
+.table th {
+  font-weight: 600;
+  background-color: rgba(74, 108, 247, 0.1);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Styles pour les accordéons */
+.accordion-button {
+  font-weight: 600;
+  background-color: rgba(74, 108, 247, 0.05);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #4a6cf7;
+  background-color: rgba(74, 108, 247, 0.1);
+}
+
+/* Styles pour les badges de certification */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Styles pour les alertes */
+.alert {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Styles pour les cartes de principe */
+.principles-grid .border {
+  transition: all 0.3s ease;
+}
+
+.principles-grid .border:hover {
+  border-color: #4a6cf7 !important;
+  background-color: rgba(74, 108, 247, 0.02);
+}
+
+/* Styles pour la sidebar */
+.legal-sidebar .list-group-item {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.legal-sidebar .list-group-item:hover {
+  background-color: rgba(74, 108, 247, 0.05);
+  border-left-color: #4a6cf7;
+}
+
+.legal-sidebar .list-group-item.active {
+  background-color: #4a6cf7;
+  border-color: #4a6cf7;
+  border-left-color: #ffc107;
+}
+
+/* Styles pour les icônes */
+.icon-wrapper {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+  .quick-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+  }
+  
+  .quick-nav .btn {
+    font-size: 0.85rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section-header .icon-wrapper {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+  }
+  
+  .section-header::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Styles d'impression */
+@media print {
+  .quick-nav,
+  .legal-sidebar,
+  .btn,
+  .alert,
+  .no-print {
+    display: none !important;
+  }
+  
+  .legal-section {
+    break-inside: avoid;
+  }
+  
+  .card {
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+  }
+}

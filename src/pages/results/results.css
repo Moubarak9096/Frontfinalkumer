@@ -1,0 +1,2375 @@
+
+.festival-selectors-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.festival-selectors-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.festival-selectors-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.festival-selectors-title {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.festival-selectors-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.festival-selectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.festival-selector-group {
+  margin-bottom: 15px;
+}
+
+.festival-selector-label {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.festival-select-wrapper {
+  position: relative;
+}
+
+.festival-select-large {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  background: rgba(26, 32, 44, 0.9);
+  border: 2px solid rgba(102, 126, 234, 0.5);
+  border-radius: 12px;
+  color: #fff;
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+.festival-select-large:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.festival-select-large:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.festival-search-container {
+  margin-top: 20px;
+}
+
+.festival-search-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.festival-search-input {
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+  background: rgba(26, 32, 44, 0.9);
+  border: 2px solid rgba(102, 126, 234, 0.5);
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.festival-search-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.festival-search-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.festival-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.festival-search-clear {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.festival-search-clear:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.festival-tools-section {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.festival-tools-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.festival-tools-left {
+  display: flex;
+  gap: 10px;
+}
+
+.festival-view-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.festival-tools-right {
+  display: flex;
+  gap: 10px;
+}
+
+.festival-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.festival-tab {
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.festival-tab:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.festival-tab-active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+}
+
+.festival-chart-card,
+.festival-table-card {
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(45, 55, 72, 0.9) 100%);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.festival-chart-title {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.festival-charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+
+.festival-table-responsive {
+  overflow-x: auto;
+}
+
+.festival-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.festival-table th {
+  background: rgba(102, 126, 234, 0.2);
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+.festival-table td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.festival-table tr:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.festival-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.festival-position-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.festival-candidate-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.festival-candidate-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #667eea;
+}
+
+.festival-candidate-avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 3px solid #667eea;
+}
+
+.festival-candidate-name {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.festival-candidate-bio {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.festival-votes-count {
+  font-weight: 700;
+  color: #78e08f;
+  font-size: 1.1rem;
+}
+
+.festival-percentage-bar {
+  height: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.festival-percentage-fill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 1s ease;
+}
+
+.festival-percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.festival-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.festival-result-card {
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(45, 55, 72, 0.9) 100%);
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.festival-result-card:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
+}
+
+.festival-result-medal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.festival-result-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.festival-result-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.festival-result-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #667eea;
+}
+
+.festival-result-img-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 4px solid #667eea;
+}
+
+.festival-result-number {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: #e55039;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.festival-result-title h4 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.festival-result-title p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.festival-result-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.festival-result-stat {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.festival-result-stat-icon {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.festival-result-stat-value {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.festival-result-stat-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.festival-result-progress {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.festival-result-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.festival-result-bio {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.festival-result-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.festival-badge-gold {
+  background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+  color: #000 !important;
+}
+
+.festival-badge-silver {
+  background: linear-gradient(135deg, #C0C0C0, #A9A9A9) !important;
+  color: #000 !important;
+}
+
+.festival-badge-bronze {
+  background: linear-gradient(135deg, #CD7F32, #A0522D) !important;
+  color: #fff !important;
+}
+
+.festival-badge-success {
+  background: linear-gradient(135deg, #78e08f, #38ada9) !important;
+  color: #fff !important;
+}
+
+.festival-no-data {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.festival-no-data-icon {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.festival-no-selection {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.festival-no-selection-card {
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(45, 55, 72, 0.9) 100%);
+  border-radius: 20px;
+  padding: 60px 40px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.festival-no-selection-icon {
+  font-size: 4rem;
+  color: rgba(102, 126, 234, 0.5);
+  margin-bottom: 20px;
+}
+
+.festival-no-selection-title {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.festival-no-selection-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.festival-chart-item {
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.7) 0%, rgba(45, 55, 72, 0.7) 100%);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.festival-chart-item h4 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+  .festival-selectors-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-tools-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .festival-tools-left,
+  .festival-tools-right {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .festival-tabs {
+    flex-direction: column;
+  }
+  
+  .festival-tab {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .festival-results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-charts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-result-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .festival-table th,
+  .festival-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .festival-selectors-card {
+    padding: 20px;
+  }
+  
+  .festival-selectors-title {
+    font-size: 1.5rem;
+  }
+}  
+
+
+/* Styles pour les boutons de compétitions */
+.festival-competitions-tabs {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.festival-competitions-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.festival-competitions-title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.festival-competitions-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.festival-competitions-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.festival-competition-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 250px;
+  text-align: left;
+}
+
+.festival-competition-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.festival-competition-btn-active {
+  background: rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+}
+
+.festival-competition-btn-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.festival-competition-btn-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.festival-competition-btn-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.festival-event-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.festival-status-active {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.festival-status-ended {
+  background: rgba(107, 114, 128, 0.2);
+  color: #9ca3af;
+  border: 1px solid rgba(107, 114, 128, 0.4);
+}
+
+.festival-status-upcoming {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.festival-competition-date {
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Styles pour les boutons de sections */
+.festival-sections-tabs {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.festival-sections-header {
+  margin-bottom: 1rem;
+}
+
+.festival-sections-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.festival-sections-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.festival-section-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.festival-section-btn:hover {
+  background: rgba(118, 75, 162, 0.2);
+  border-color: rgba(118, 75, 162, 0.5);
+  transform: translateY(-2px);
+}
+
+.festival-section-btn-active {
+  background: rgba(118, 75, 162, 0.25);
+  border-color: #764ba2;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+}
+
+/* Styles pour la recherche */
+.festival-search-container {
+  margin-top: 1.5rem;
+}
+
+.festival-search-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.festival-search-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.festival-search-input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.festival-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.festival-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+
+.festival-search-clear {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.festival-search-clear:hover {
+  color: #fff;
+}
+
+/* Styles pour les cartes de résultats */
+.festival-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.festival-result-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.festival-result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.festival-result-medal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.festival-medal-1 {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  border: 2px solid #FFD700;
+}
+
+.festival-medal-2 {
+  box-shadow: 0 0 20px rgba(192, 192, 192, 0.5);
+  border: 2px solid #C0C0C0;
+}
+
+.festival-medal-3 {
+  box-shadow: 0 0 20px rgba(205, 127, 50, 0.5);
+  border: 2px solid #CD7F32;
+}
+
+.festival-result-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.festival-result-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.festival-result-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(102, 126, 234, 0.5);
+}
+
+.festival-result-img-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 3px solid rgba(102, 126, 234, 0.5);
+}
+
+.festival-result-number {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 2px solid #667eea;
+}
+
+.festival-result-title h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.festival-result-title p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.festival-result-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.festival-result-stat {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.festival-result-stat-icon {
+  color: #667eea;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.festival-result-stat-value {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.festival-result-stat-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.festival-result-progress {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.festival-result-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.festival-result-bio {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.festival-result-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .festival-competitions-buttons {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+  
+  .festival-competition-btn {
+    min-width: 280px;
+    flex-shrink: 0;
+  }
+  
+  .festival-sections-buttons {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+  
+  .festival-section-btn {
+    flex-shrink: 0;
+  }
+  
+  .festival-results-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .festival-competitions-title {
+    font-size: 1.5rem;
+  }
+  
+  .festival-competition-btn {
+    min-width: 250px;
+    padding: 0.875rem 1.25rem;
+  }
+  
+  .festival-competition-btn-title {
+    font-size: 1rem;
+  }
+  
+  .festival-competition-btn-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .festival-results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .festival-result-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .festival-result-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .festival-competitions-tabs {
+    padding: 1rem 0;
+  }
+  
+  .festival-competitions-title {
+    font-size: 1.3rem;
+  }
+  
+  .festival-competition-btn {
+    min-width: 100%;
+  }
+  
+  .festival-sections-tabs {
+    padding: 1rem;
+  }
+  
+  .festival-section-btn {
+    padding: 0.625rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Styles pour les badges de statut dans les résultats */
+.festival-badge-gold {
+  background: rgba(255, 215, 0, 0.15);
+  color: #FFD700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.festival-badge-silver {
+  background: rgba(192, 192, 192, 0.15);
+  color: #C0C0C0;
+  border: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.festival-badge-bronze {
+  background: rgba(205, 127, 50, 0.15);
+  color: #CD7F32;
+  border: 1px solid rgba(205, 127, 50, 0.3);
+}
+
+.festival-badge-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.festival-badge-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animation pour le bouton actif */
+@keyframes pulse-active {
+  0% {
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(102, 126, 234, 0.6);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  }
+}
+
+.festival-competition-btn-active {
+  animation: pulse-active 2s infinite;
+}
+
+/* ===== MODAL POUR TOUTES LES COMPÉTITIONS ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.all-competitions-modal {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.all-competitions-modal-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all-competitions-modal-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.all-competitions-modal-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.all-competitions-modal-close:hover {
+  color: #fff;
+}
+
+.all-competitions-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.all-competitions-list {
+  padding: 1rem;
+}
+
+.all-competitions-item {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.all-competitions-item:hover {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.4);
+  transform: translateX(5px);
+}
+
+.all-competitions-item:last-child {
+  margin-bottom: 0;
+}
+
+.all-competitions-item-content {
+  flex: 1;
+}
+
+.all-competitions-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.all-competitions-item-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.all-competitions-item-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.all-competitions-item-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.all-competitions-item-dates {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.all-competitions-date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.all-competitions-item-arrow {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+  margin-left: 1rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.all-competitions-item:hover .all-competitions-item-arrow {
+  color: #667eea;
+  transform: translateX(3px);
+}
+
+.all-competitions-modal-footer {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== GRILLE DE CARTES POUR LES COMPÉTITIONS ===== */
+.festival-competitions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.festival-competition-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.festival-competition-card:hover {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.festival-competition-card-active {
+  background: rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.festival-competition-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.festival-competition-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 0.75rem;
+}
+
+.festival-competition-card-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.festival-competition-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.festival-competition-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.festival-competition-selected-indicator {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #667eea;
+  font-size: 1.2rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+/* ===== BOUTON VOIR TOUTES LES COMPÉTITIONS ===== */
+.festival-view-all-competitions {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.festival-btn-view-all {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border: 2px solid rgba(102, 126, 255, 0.3);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.festival-btn-view-all:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+  border-color: rgba(102, 126, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* ===== SÉLECTEUR DE SECTIONS ===== */
+.festival-sections-selector {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.festival-sections-header {
+  margin-bottom: 1.5rem;
+}
+
+.festival-sections-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.festival-select-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.festival-select {
+  width: 100%;
+  padding: 1rem 1rem 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.festival-select:hover {
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.festival-select:focus {
+  outline: none;
+  border-color: #667eea;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.festival-select-large {
+  padding: 1.25rem 1.5rem 1.25rem 2rem;
+  font-size: 1.1rem;
+}
+
+.festival-select-arrow {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+.festival-select option {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* ===== RECHERCHE ===== */
+.festival-search-container {
+  margin-bottom: 2rem;
+}
+
+.festival-search-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.festival-search-input {
+  width: 100%;
+  padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.festival-search-input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.festival-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.festival-search-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+}
+
+.festival-search-clear {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.festival-search-clear:hover {
+  color: #fff;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+  .festival-competitions-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .festival-competitions-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .festival-competition-card {
+    padding: 1.25rem;
+  }
+  
+  .festival-competition-card-title {
+    font-size: 1rem;
+  }
+  
+  .all-competitions-modal {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .festival-competitions-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  
+  .festival-competition-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .festival-sections-selector {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .all-competitions-modal-header {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .all-competitions-modal-footer {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .all-competitions-item {
+    padding: 1rem 1.25rem;
+  }
+  
+  .all-competitions-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .festival-competitions-tabs {
+    padding: 1rem 0;
+  }
+  
+  .festival-competitions-title {
+    font-size: 1.3rem;
+  }
+  
+  .festival-competitions-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .festival-sections-title {
+    font-size: 1.1rem;
+  }
+  
+  .festival-select-large {
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .all-competitions-modal {
+    max-width: 95%;
+    max-height: 90vh;
+  }
+  
+  .all-competitions-modal-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===== ANIMATIONS ET TRANSITIONS ===== */
+.festival-competition-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.festival-competition-card:hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.festival-competition-card-active {
+  animation: card-selected 0.6s ease;
+}
+
+@keyframes card-selected {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ===== STATUTS DES ÉVÉNEMENTS ===== */
+.festival-event-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.festival-status-active {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.festival-status-ended {
+  background: rgba(107, 114, 128, 0.2);
+  color: #9ca3af;
+  border: 1px solid rgba(107, 114, 128, 0.4);
+}
+
+.festival-status-upcoming {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour la section compacte des événements */
+.events-compact-section {
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(45, 55, 72, 0.9) 100%);
+  border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.events-compact-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.events-compact-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-compact-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.events-compact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-compact-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.event-compact-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+.event-compact-btn-active {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.event-compact-btn-all {
+  background: rgba(118, 75, 162, 0.2);
+  border-color: rgba(118, 75, 162, 0.5);
+}
+
+.event-compact-btn-all:hover {
+  background: rgba(118, 75, 162, 0.3);
+  border-color: #764ba2;
+}
+
+.event-compact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.event-compact-title {
+  font-weight: 500;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.event-compact-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  gap: 0.25rem;
+}
+
+.event-status-label {
+  font-size: 0.6rem;
+}
+
+.event-status-icon {
+  font-size: 0.6rem;
+}
+
+.event-status-active {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #10b981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+.event-status-ended {
+  background: rgba(107, 114, 128, 0.1) !important;
+  color: #6B7280 !important;
+  border: 1px solid rgba(107, 114, 128, 0.3) !important;
+}
+
+.event-status-upcoming {
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: #F59E0B !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Modal pour tous les événements */
+.all-events-modal {
+  background: linear-gradient(135deg, rgba(26, 32, 44, 0.95) 0%, rgba(45, 55, 72, 0.95) 100%);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.all-events-modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all-events-modal-title {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.all-events-modal-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.all-events-modal-close:hover {
+  color: #fff;
+}
+
+.all-events-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+/* Filtres de la modal */
+.all-events-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.all-events-search {
+  position: relative;
+}
+
+.all-events-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.all-events-search-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.all-events-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.all-events-filter-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.all-events-filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.all-events-filter-select option {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+/* Liste des événements dans la modal */
+.all-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.all-events-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.all-events-item:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateX(5px);
+}
+
+.all-events-item-selected {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+}
+
+.all-events-item-content {
+  margin-bottom: 1rem;
+}
+
+.all-events-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.all-events-item-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.all-events-item-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  gap: 0.5rem;
+}
+
+.all-events-item-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.all-events-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.all-events-item-date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.all-events-item-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.all-events-select-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.all-events-select-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.all-events-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.all-events-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-compact-buttons {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+  }
+  
+  .event-compact-btn {
+    flex-shrink: 0;
+  }
+  
+  .all-events-modal {
+    max-width: 95%;
+    max-height: 90vh;
+  }
+  
+  .all-events-filters {
+    grid-template-columns: 1fr;
+  }
+  
+  .all-events-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .all-events-item-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .events-compact-title {
+    font-size: 1rem;
+  }
+  
+  .events-compact-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .event-compact-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    max-width: 180px;
+  }
+  
+  .event-compact-title {
+    font-size: 0.8rem;
+  }
+  
+  .event-compact-status {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.4rem;
+  }
+}
+/* Styles pour les sections compactes */
+.festival-sections-tabs {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.festival-sections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.festival-sections-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.festival-sections-counter {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.festival-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.festival-section-btn-compact {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 60px;
+  justify-content: center;
+}
+
+.festival-section-btn-compact:hover {
+  background: rgba(118, 75, 162, 0.2);
+  border-color: rgba(118, 75, 162, 0.5);
+  transform: translateY(-2px);
+}
+
+.festival-section-btn-compact-active {
+  background: rgba(118, 75, 162, 0.25);
+  border-color: #764ba2;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.2);
+}
+
+.festival-section-btn-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.festival-section-btn-title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.festival-section-btn-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.festival-section-btn-more {
+  background: rgba(102, 126, 234, 0.15);
+  border: 1px dashed rgba(102, 126, 234, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #667eea;
+  min-height: auto;
+  padding: 0.5rem;
+}
+
+.festival-section-btn-more:hover {
+  background: rgba(102, 126, 234, 0.25);
+  border-style: solid;
+}
+
+/* Supprimer ou commenter les anciens styles de sections si nécessaire */
+.festival-sections-buttons {
+  /* Ancien style à supprimer ou commenter */
+  display: none;
+}
+
+.festival-section-btn {
+  /* Ancien style à supprimer ou commenter */
+  display: none;
+}
+
+/* Responsive design pour les sections */
+@media (max-width: 992px) {
+  .festival-sections-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .festival-sections-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .festival-sections-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .festival-sections-title {
+    font-size: 1rem;
+  }
+  
+  .festival-section-btn-compact {
+    padding: 0.6rem;
+    min-height: 55px;
+  }
+  
+  .festival-section-btn-title {
+    font-size: 0.85rem;
+  }
+  
+  .festival-section-btn-desc {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .festival-sections-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.4rem;
+  }
+  
+  .festival-sections-tabs {
+    padding: 1rem;
+  }
+  
+  .festival-section-btn-compact {
+    padding: 0.5rem;
+    min-height: 50px;
+  }
+  
+  .festival-section-btn-title {
+    font-size: 0.8rem;
+  }
+  
+  .festival-section-btn-desc {
+    display: none; /* Cacher la description sur mobile pour plus de compacité */
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 400px) {
+  .festival-sections-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}

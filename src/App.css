@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #dd1b44;
 }
 
 @keyframes App-logo-spin {
@@ -83,7 +83,7 @@
 }
 
 .step.active span {
-  background: #007bff;
+  background:#dd1b44;
   color: white;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .step.active small {
-  color: #007bff;
+  color: #dd1b44;
   font-weight: bold;
 }
 
@@ -133,10 +133,108 @@
 
 /* Styles pour la barre d'admin */
 .admin-bar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #dd1b44 0%, #764ba2 100%);
 }
 
 /* Loading admin */
 .admin-loading {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #dd1b44 0%, #764ba2 100%);
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* CreateEvent.css */
+.image-upload-container {
+  position: relative;
+}
+
+.image-preview {
+  text-align: center;
+}
+
+.image-preview img {
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.image-preview img:hover {
+  border-color: #4a6cf7;
+}
+
+.candidate-card .image-preview img {
+  border: 2px solid #dee2e6;
+}
+
+.candidate-card .image-preview img:hover {
+  border-color: #28a745;
+}
+
+.section-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef !important;
+  transition: all 0.3s ease;
+}
+
+.section-card:hover {
+  border-color: #4a6cf7 !important;
+  background: #f0f4ff;
+}
+
+.confirmation-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.rn-progress-bar .step.active {
+  background: #4a6cf7;
+  color: white;
+  border-color: #4a6cf7;
+}
+
+.rn-progress-bar .step.active span {
+  background: white;
+  color: #4a6cf7;
+}
+
+/* Styles pour les aperçus d'images */
+.img-preview-thumb {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+@media (max-width: 1199px) {
+  .header-right {
+    gap: 10px;
+  }
+
+  .header-btn .btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainmenu-wrapper {
+    display: none;
+  }
+
+  .header_admin {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo-thumbnail img {
+    max-width: 120px;
+  }
 }
